@@ -7,6 +7,7 @@ import Layout from "./Layout.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/About/About.jsx";
 import './index.css'
+import Contact from "./components/Contactpage/Contact.jsx";
 
 const router =  createBrowserRouter([
     {
@@ -14,12 +15,16 @@ const router =  createBrowserRouter([
         element:<Layout/>,
         children:[
             {
-                path:" ",
+                path:"",
                 element:<Home/>
             },
             {
                 path:"about",
                 element:<About/>
+            },
+            {
+                path:"contact",
+                element:<Contact/>
             }
         ]
     }
