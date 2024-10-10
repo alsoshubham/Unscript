@@ -1,11 +1,12 @@
 // /* eslint-disable react/jsx-no-undef */
-import React from "react";
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import ReactDOM from "react-dom/client"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/About/About.jsx";
+import './index.css'
 
 const router =  createBrowserRouter([
     {
@@ -25,9 +26,9 @@ const router =  createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <StrictMode>
     <RouterProvider router = {router}/>
-  </React.StrictMode>
+  </StrictMode>
 );
 
 export default createRoot;
