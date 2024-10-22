@@ -1,0 +1,79 @@
+.DemoSection
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    background: var(--gradient-bar);
+}
+
+.DemoSection-content p {
+    display: flex;
+    font-family: var(--font-family);
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.Subscribe{
+    display: flex;
+    gap: 4;
+}
+
+.Email{
+    color: #000;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: text;
+}
+.Subscribe-btn {
+    background: #000;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+@media screen and (max-width: 650px) {
+    .DemoSection {
+        flex-direction: column;
+    }
+
+    .Subscribe-btn {
+        margin: 2rem 0 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .DemoSection {
+        flex-direction: column;
+        margin: 4rem 2rem;
+    }
+
+    .DemoSection-content h3 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .Subscribe-btn button {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}

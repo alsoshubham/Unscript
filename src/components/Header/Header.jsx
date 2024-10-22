@@ -6,7 +6,7 @@ export default function Header() {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
             <img
-              src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+              src="https://cdn.prod.website-files.com/6643532c58c89f83c4fcd358/66435cbb1e8a3fb4dd89a6b1_unscript%20Logo.webp"
               className="mr-3 h-12"
               alt="Logo"
             />
@@ -16,13 +16,7 @@ export default function Header() {
               to="#"
               className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
             >
-              Log in
-            </Link>
-            <Link
-              to="#"
-              className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
-            >
-              Get started
+              Contact sales
             </Link>
           </div>
           <div
@@ -32,40 +26,52 @@ export default function Header() {
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
                 <NavLink
-                to="/"
+                to="/useCases"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 border-b ${
                       isActive ? "text-orange-700" : "text-gray-700"
                     } border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
-                  Home
+                  Use cases
                 </NavLink>
               </li>
 
               <li>
                 <NavLink
-                to="/about"
+                to="/features"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 border-b ${
                       isActive ? "text-orange-700" : "text-gray-700"
                     } border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
-                  About
+                  Features
                 </NavLink>
               </li>
 
               <li>
                 <NavLink
-                to="/contact"
+                to="/resources"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 border-b ${
                       isActive ? "text-orange-700" : "text-gray-700"
                     } border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
-                  Contact us
+                  Resources
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                to="/company"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 border-b ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Company
                 </NavLink>
               </li>
             </ul>
